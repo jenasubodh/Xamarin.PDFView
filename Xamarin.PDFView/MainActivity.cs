@@ -31,7 +31,7 @@ namespace Xamarin.PDFView
 			settings.AllowUniversalAccessFromFileURLs = true;
 			settings.BuiltInZoomControls = true;
 			webView.SetWebChromeClient (new WebChromeClient ());
-			webView.LoadUrl("file:///android_asset/pdfviewer/index.html");
+			webView.LoadUrl("file:///android_asset/pdfviewer/index.html?url=samplePDF.pdf");
 		}
 
 		protected override void OnResume ()
